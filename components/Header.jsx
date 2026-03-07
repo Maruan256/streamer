@@ -17,7 +17,6 @@ export default function Header() {
 
       <div style={{display:"flex", gap:12, alignItems:"center"}}>
         <TenantSwitcher />
-        <button className="cta">Donate</button>
       </div>
     </header>
   )
