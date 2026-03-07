@@ -1,0 +1,59 @@
+:root {
+  /* defaults */
+  --color-primary: #0b6cf6;
+  --color-accent: #f6a11b;
+  --color-background: #ffffff;
+  --color-text: #0f172a;
+  --app-font: system-ui, -apple-system;
+}
+
+* { box-sizing: border-box; }
+html,body,#__next { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--app-font);
+  background: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.cta {
+  background: var(--color-primary);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.page {
+  padding: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.card {
+  border-radius: 10px;
+  background: white;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
