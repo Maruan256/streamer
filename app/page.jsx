@@ -1,4 +1,19 @@
+'use client'
+
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+
 export default function Page() {
+  const router = useRouter();
+  const handleClickAdmin = () => {
+    router.push("/Admin");
+  }
+  useEffect(() => {
+    // Ensure that router is available
+    if (!router) {
+      console.error('Router is not available');
+    }
+  }, [router]);
   return (
     <>
       <section className="card" style={{marginBottom:20}}>
@@ -14,7 +29,7 @@ export default function Page() {
             <h3 style={{marginTop:12}}>Live Now: Community Stream</h3>
             <p>Short description of the stream. CTA buttons below adapt to theme colors.</p>
             <div style={{display:"flex", gap:8, marginTop:12}}>
-              <button className="cta">Donate</button>
+              <button className="cta" onClick={handleClickAdmin}>Admin</button>
               <button style={{padding:"8px 12px", borderRadius:8, border:"1px solid rgba(0,0,0,0.08)"}}>Volunteer</button>
             </div>
           </div>

@@ -5,9 +5,9 @@ import { useTheme } from "./ThemeProvider"
 export default function TenantSwitcher() {
   const { theme, switchTheme } = useTheme()
   const tenants = [
-    { id: "cust-a", label: "Hope Stream" },
-    { id: "cust-b", label: "Care TV" },
-    { id: "cust-c", label: "Relief Live" }
+    { id: "ngo-a", label: "Hope Stream" },
+    { id: "ngo-b", label: "Care TV" },
+    { id: "ngo-c", label: "Relief Live" }
   ]
 
   return (

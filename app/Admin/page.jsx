@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react"
 import AdminThemeEditor from "../../components/AdminThemeEditor"
+import { useTheme } from "../../components/ThemeProvider"
 
 const TENANTS = [
   { id: "ngo-a", label: "Hope Stream" },
@@ -12,6 +13,7 @@ export default function AdminPage() {
   const [selected, setSelected] = useState(TENANTS[0].id)
   const [theme, setTheme] = useState(null)
   const [loading, setLoading] = useState(false)
+  const { switchTheme } = useTheme()
 
   useEffect(() => {
     fetch(`/api/themes/${selected}`).then(r => r.json()).then(setTheme).catch(()=>{})
@@ -29,6 +31,7 @@ export default function AdminPage() {
     if (res.ok) {
       alert("Saved")
       setTheme(updated)
+      switchTheme(selected)
     } else {
       alert("Save failed")
     }
@@ -51,6 +54,7 @@ export default function AdminPage() {
       ) : (
         <div>Loading...</div>
       )}
+      <button className="cta" onClick={() => window.history.back()}>go back</button>
     </div>
   )
 }
