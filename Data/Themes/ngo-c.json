@@ -1,0 +1,12 @@
+{
+  "id": "ngo-c",
+  "name": "Relief Live",
+  "colors": {
+    "primary": "#ee3a70",
+    "accent": "#06b6d4",
+    "background": "#fff7ed",
+    "text": "#271a45"
+  },
+  "logo": "/logos/ngo-c.png",
+  "font": "Georgia, serif"
+}

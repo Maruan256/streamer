@@ -1,0 +1,12 @@
+{
+  "id": "ngo-a",
+  "name": "Hope Stream",
+  "colors": {
+    "primary": "#0b6cf6",
+    "accent": "#f6a11b",
+    "background": "#ffffff",
+    "text": "#0f172a"
+  },
+  "logo": "/logos/ngo-a.png",
+  "font": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto"
+}

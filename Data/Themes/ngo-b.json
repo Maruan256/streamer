@@ -1,0 +1,12 @@
+{
+  "id": "ngo-b",
+  "name": "Care TV",
+  "colors": {
+    "primary": "#613d46",
+    "accent": "#a0c224",
+    "background": "#f8fafc",
+    "text": "#042a2b"
+  },
+  "logo": "/logos/ngo-b.png",
+  "font": "Poppins, system-ui, -apple-system"
+}
