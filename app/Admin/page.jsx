@@ -4,9 +4,9 @@ import AdminThemeEditor from "../../components/AdminThemeEditor"
 import { useTheme } from "../../components/ThemeProvider"
 
 const TENANTS = [
-  { id: "ngo-a", label: "Hope Stream" },
-  { id: "ngo-b", label: "Care TV" },
-  { id: "ngo-c", label: "Relief Live" }
+  { id: "ngo-a", label: "custumer A" },
+  { id: "ngo-b", label: "Customer B" },
+  { id: "ngo-c", label: "Customer C" }
 ]
 
 export default function AdminPage() {
